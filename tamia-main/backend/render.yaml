@@ -1,0 +1,21 @@
+services:
+  # Laravel Web Service
+  - type: web
+    name: tamia-backend
+    env: docker
+    plan: free
+    envVars:
+      - key: APP_KEY
+        sync: false
+      - key: APP_DEBUG
+        value: false
+      - key: APP_URL
+        value: https://tamia-backend.onrender.com
+      - key: DB_CONNECTION
+        value: pgsql
+      - key: DB_URL
+        sync: false # User will provide Neon DATABASE_URL
+      - key: CLOUDINARY_URL
+        sync: false # User will provide Cloudinary URL
+      - key: FILESYSTEM_DISK
+        value: cloudinary

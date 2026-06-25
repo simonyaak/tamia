@@ -1,0 +1,24 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "https://tamia.onrender.com/api/$1"
+    },
+    {
+      "source": "/auth/(.*)",
+      "destination": "https://tamia.onrender.com/auth/$1"
+    },
+    {
+      "source": "/storage/(.*)",
+      "destination": "https://tamia.onrender.com/storage/$1"
+    },
+    {
+      "source": "/s/(.*)",
+      "destination": "https://tamia.onrender.com/s/$1"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
